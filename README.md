@@ -54,7 +54,7 @@ npm run start:dev
 
 Para fazer o build do projeto:
 ```bash
-npm run start:dev
+npm run build
 ```
 
 Para rodar o projeto em produção:
