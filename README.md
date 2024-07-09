@@ -4,6 +4,14 @@
 
 Este projeto é uma aplicação backend monolítica desenvolvida em NestJS que se conecta a um banco de dados MongoDB hospedado no Atlas. Com arquitetura robusta e escalável, o projeto é ideal para empresas do ramo automotivo, permitindo o cadastro e consulta de clientes, serviços e automóveis. A aplicação utiliza autenticação de usuário com JWT strategy e um microsserviço desacoplado para autenticação.
 
+## Tecnologias Utilizadas
+- Node.js (versão 18.15.11)
+- NestJS
+- MongoDB Atlas
+- Docker
+- TypeScript
+- JWT Strategy
+
 ## Estrutura do Projeto
 
 - **Backend**: Desenvolvido em NestJS
@@ -35,3 +43,22 @@ npm install -g @nestjs/cli@^9.0.0
 
 # Instale as dependências:
 npm install
+```
+
+## Comandos Úteis
+
+Para rodar o projeto em modo de desenvolvimento:
+```bash
+npm run start:dev
+```
+
+Para fazer o build do projeto:
+```bash
+npm run start:dev
+```
+
+Para rodar o projeto em produção:
+```bash
+npm run start:prod
+```
+
