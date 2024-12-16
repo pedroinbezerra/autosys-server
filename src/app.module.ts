@@ -10,10 +10,14 @@ import { JwtModule } from '@nestjs/jwt';
 import { AppService } from './app.service';
 import { VersioningModule } from './versioning/versioning.module';
 import { NpsModule } from './nps/nps.module';
+import { ConfigModule } from '@nestjs/config';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb+srv://autosys:MZYPs3O1pbP8ESAc@autosys.icde4et.mongodb.net'),
+    ConfigModule.forRoot({
+      isGlobal: true,
+    }),
+    MongooseModule.forRoot(process.env.DATABASE_URL),
     AuthModule,
     ClientModule,
     VehicleModule,
